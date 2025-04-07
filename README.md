@@ -1,4 +1,5 @@
 Build a Random Quote Machine
+
 Note: React 18 has known incompatibilities with the tests for this project (see issue)
 
 Objective: Build an app that is functionally similar to this: https://random-quote-machine.freecodecamp.rocks/.
