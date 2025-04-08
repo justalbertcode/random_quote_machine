@@ -10,98 +10,91 @@
   box-sizing: border-box;
 }
 
+/* Basic styling to center the content */
 body {
-  background-color: var(--black);
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-h1{
-    color: var(--white);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+  }
+  h1{
     text-align: center;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+  }
+  #quote-box {
+    background-color: white;
     padding: 20px;
-}
-
-.footer {
-  width: 450px;
-  text-align: center;
-  display: block;
-  margin: 20px auto;
-  font-size: 0.9em;
-  color: var(--white);
-}
-.footer a {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--white);
-}
-
-#quote-box {
-  border-radius: 10px;
-  position: relative;
-  width: 450px;
-  padding: 40px 50px;
-  display: table;
-  background-color: var(--white);
-  color: var(--black);
-}
-#quote-box .quote-text {
-  text-align: center;
-  width: 450px;
-  height: auto;
-  font-weight: 500;
-  font-size: 1.75em;
-}
-#quote-box .quote-text i {
-  font-size: 1em;
-  margin-right: 0.4em;
-}
-#quote-box .quote-author {
-  width: 450px;
-  height: auto;
-  clear: both;
-  padding-top: 20px;
-  font-size: 1em;
-  text-align: right;
-}
-#quote-box .buttons {
-  width: 450px;
-  margin: auto;
-  display: block;
-}
-#quote-box .buttons .button {
-  height: 38px;
-  border: none;
-  border-radius: 3px;
-  color: var(--white);
-  background-color: var(--black);
-  outline: none;
-  font-size: 0.85em;
-  padding: 8px 18px 6px 18px;
-  margin-top: 30px;
-  opacity: 1;
-  cursor: pointer;
-}
-#quote-box .buttons .button:hover {
-  opacity: 0.9;
-  color: yellow;
-}
-#quote-box .buttons .button#tweet-quote{
-  float: left;
-  padding: 6px;
-  text-align: center;
-  font-size: 1.2em;
-  margin-right: 5px;
-  height: 30px;
-  width: 40px;
-}
-#quote-box .buttons .button#tweet-quote:hover{
-   color: lightblue; 
-}
-#quote-box .buttons .button#new-quote {
-  float: right;
-}
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  #text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #author {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  #new-quote, #tweet-quote {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #new-quote {
+    background-color: #000;
+    color: white;
+  }
+  
+  #tweet-quote {
+    background-color: blue;
+    color: white;
+  }
+  
+  #new-quote:hover, #tweet-quote:hover {
+    opacity: 0.9;
+    color: yellow;
+  }
+  
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer {
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    font-size: 0.8em;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .footer a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer a:hover{
+    color: yellow;
+  }
